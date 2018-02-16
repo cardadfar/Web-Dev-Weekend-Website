@@ -1,0 +1,382 @@
+canvas { 
+    position: absolute; 
+    top: 0px;
+    right: 0px; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a.pink_text {
+    color:#e24c9b;
+    text-decoration: none;
+    border-bottom: 1px solid #e24c9b;
+    transition: all 0.5s;
+}
+
+a.pink_text:hover {
+    color: #f970b8;
+    border-bottom: 1px solid #f970b8;
+}
+
+a.blue_text {
+    color: #00bff3;   
+    text-decoration: none;
+    border-bottom: 1px solid #00bff3;
+    transition: all 0.5s;
+}
+
+a.blue_text:hover {
+    color: #51d9ff;   
+    border-bottom: 1px solid #51d9ff;
+}
+
+.black-bar {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 10%;
+    background: black;
+    box-shadow: 0 0 20px 5px black;
+    opacity: 0.25;
+}
+
+.label {
+    position: fixed;
+    top: 85%;
+    left: 100%;
+    width: 65px;
+    z-index: 99;
+    text-align: center;
+    opacity: 0.65;
+}
+
+#label1 {
+    top: 85%;
+    width: 45px;
+    transition: left 2.5s, opacity 0.5s;
+}
+
+#label2 {
+    top: 65%;
+    transition: left 2s, opacity 0.5s;
+}
+
+#label3 {
+    top: 45%;
+    transition: left 1.5s, opacity 0.5s;
+}
+
+#label4 {
+    top: 25%;
+    transition: left 1s, opacity 0.5s;
+}
+
+#label5 {
+    top: 65%;
+    left: -5.5%;
+    transition: left 2s, opacity 0.5s;
+}
+
+#label6 {
+    top: 45%;
+    left: -5.5%;
+    transition: left 1.5s, opacity 0.5s;
+}
+
+#label7 {
+    top: 25%;
+    left: -5.5%;
+    transition: left 1s, opacity 0.5s;
+}
+
+.main-encapsle{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.pink-text {
+    color: #e24c9b;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    width: 60%;
+    margin-left: 18%;
+}
+
+.blue-text {
+    color: #00bff3;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    width: 60%;
+    margin-left: 18%;
+    text-align: justify;
+}
+
+#logo-space {
+    padding-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: -10px;
+    margin-left: 17%;
+    margin-right: 13%;
+}
+
+#title {
+    font-size: 4.9vw;
+    font-style: italic;
+    margin-left: 17%;
+    margin-bottom: -5px;
+    width: 70%;
+}
+
+#subtitle {
+    font-size: 2vw;
+    margin-left: 18%;
+    width: 70%;
+    margin-bottom: 25vh;
+}
+
+#header {
+    font-size: 45px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.sub-header {
+    margin-left: 26%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.sub-header-first {
+    margin-top: 50px;
+}
+
+.sub-text {
+    margin-left: 30%;
+    width: 47.5%;
+}
+
+#date-text {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+#session {
+    font-size: 35px;
+}
+
+.schedule-element {
+    width: 60%;
+    margin-left: 18%;
+    height: 50px;
+}
+
+#schedule-talk {
+    font-size: 20px;
+    margin: 0 0 0 0;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#schedule-time {
+    font-size: 20px;
+    margin: 0 0 0 0;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.horizontal-line {
+    width: calc(55% - 50px);
+    height: 1px;
+    margin-left: calc(22.5% + 50px);
+    background: #e24c9b;
+}
+
+.diag-line {
+    width: 5.8%;
+    height: 1px;
+    margin-left: 22.5%;
+    margin-top: 50px;
+    margin-bottom: -1px;
+    background: #e24c9b;
+    transform-origin: 0;
+    transform: rotate(-45deg);
+}
+
+.rev-diag-line {
+    width: 5.8%;
+    height: 1px;
+    margin-left: 22.5%;
+    background: #e24c9b;
+    transform-origin: 0;
+    transform: rotate(45deg);
+}
+
+.vertical-line {
+    height: 1px;
+    margin-left: 22.5%;
+    background: #e24c9b;
+    transform-origin: 0;
+    transform: rotate(90deg);
+}
+
+.vertical-line-02 {
+    height: 1px;
+    margin-left: 22.5%;
+    background: #e24c9b;
+    transform-origin: 0;
+    transform: rotate(90deg);
+}
+
+.prev-talks {
+    margin-left: 26%;
+    text-align: left;
+    width:60%;
+}
+
+#prev-talk-first {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .pink-text {
+        font-size: 15px;
+    }
+
+    .blue-text {
+        font-size: 15px;
+    }
+
+    #schedule-talk {
+        font-size: 15px;
+    }
+
+    #schedule-time {
+        font-size: 12px;
+    }
+
+    .sub-header {
+        font-size: 20px;
+        margin-top: 33px;
+        margin-left: 27%;
+    }
+
+    .sub-header-first {
+        margin-top: 62px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .label {
+        width: 9%;
+    }
+
+    #label2 {
+        top: 3%;
+        left: 84%;
+    }
+
+    #label3 {
+        top: 3%;
+        left: 69%;
+    }
+
+    #label4 {
+        top: 3%;
+        left: 54%;
+    }
+
+    #label5 {
+        top: 3%;
+        left: 38%;
+    }
+
+    #label6 {
+        top: 3%;
+        left: 22.5%;
+    }
+
+    #label7 {
+        top: 3%;
+        left: 7%;
+    }
+
+    .pink-text {
+        font-size: 12px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .blue-text {
+        font-size: 12px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #header {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+    .sub-header {
+        font-size: 16px;
+        margin-top: 33px;
+        margin-left: 25%;
+    }
+
+    .sub-header-first {
+        margin-top: 62px;
+    }
+
+    .sub-text {
+        margin-left: 30%;
+        width: 57%;
+    }
+
+    #date-text {
+        font-size: 20px;
+    }
+
+    #session {
+        margin-bottom: 25px;
+        padding-top: 10px;
+        margin-left: 17%;
+        font-size: 17px;
+    }
+
+    .schedule-element {
+        width: 60%;
+        margin-left: 18%;
+        height: 30px;
+    }
+
+    #schedule-talk {
+        font-size: 12px;
+        margin-top: 
+    }
+
+    #schedule-time {
+        font-size: 10px;
+    }
+
+    .prev-talks {
+        margin-left: 25%;
+        width: 40%;
+    }
+
+}
+
+#defaultCanvas0 {
+    z-index: -10;
+}
