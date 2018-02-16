@@ -43,7 +43,7 @@ a.blue_text:hover {
     height: 10%;
     background: black;
     box-shadow: 0 0 20px 5px black;
-    opacity: 0.25;
+    opacity: 0;
 }
 
 .label {
