@@ -59,22 +59,22 @@ a.blue_text:hover {
 #label1 {
     top: 85%;
     width: 45px;
-    transition: left 2.5s, opacity 0.5s;
+    transition: left 2.5s, top 1s, opacity 0.5s;
 }
 
 #label2 {
     top: 65%;
-    transition: left 2s, opacity 0.5s;
+    transition: left 2s, top 1s, opacity 0.5s;
 }
 
 #label3 {
     top: 45%;
-    transition: left 1.5s, opacity 0.5s;
+    transition: left 1.5s, top 1s, opacity 0.5s;
 }
 
 #label4 {
     top: 25%;
-    transition: left 1s, opacity 0.5s;
+    transition: left 1s, top 1s, opacity 0.5s;
 }
 
 #label5 {

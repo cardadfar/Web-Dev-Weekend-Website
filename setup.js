@@ -5,11 +5,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var height = $(window).height();
-    var bodyS = document.body.scrollTop;
-    var elementS = document.documentElement.scrollTop;
+    var element = (document.documentElement || document.body.parentNode || document.body).scrollTop;
     if($(window).width() > 600) {
         $(".black-bar").css('opacity', '0');
-        if (bodyS > 20 || elementS > 20) {
+        if (element > 20) {
 
             document.getElementById("label1").style.left = 'calc(98% - 45px)';
             document.getElementById("label2").style.left = 'calc(98% - 65px)';
@@ -33,7 +32,7 @@ function scrollFunction() {
     }
     else {
         $(".black-bar").css('opacity', '0.25');
-        if (lastScrollTop < elementS) {
+        if (lastScrollTop < element) {
             var p = $(".black-bar").position();
             $(".black-bar").css('position', 'absolute');
             $(".black-bar").css('top', p.top);
@@ -43,15 +42,15 @@ function scrollFunction() {
             $('#label5').css('top', '-7%');
             $('#label6').css('top', '-7%');
             $('#label7').css('top', '-7%');
-            lastScrollTop = elementS;
+            lastScrollTop = element;
         }
         else {
             $(".black-bar").css('position', 'fixed');
-            var dif = lastScrollTop-elementS;
+            var dif = lastScrollTop-element;
             var hgt = 0;
             if(dif > hgt) {
                 dif = hgt;
-                lastScrollTop = elementS;
+                lastScrollTop = element;
             }
             $(".black-bar").css('top', dif);
             $('#label2').css('top', dif+15);
