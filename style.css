@@ -80,19 +80,19 @@ a.blue_text:hover {
 #label5 {
     top: 65%;
     left: -5.5%;
-    transition: left 2s, opacity 0.5s;
+    transition: left 2s, top 1s, opacity 0.5s;
 }
 
 #label6 {
     top: 45%;
     left: -5.5%;
-    transition: left 1.5s, opacity 0.5s;
+    transition: left 1.5s, top 1s, opacity 0.5s;
 }
 
 #label7 {
     top: 25%;
     left: -5.5%;
-    transition: left 1s, opacity 0.5s;
+    transition: left 1s, top 1s, opacity 0.5s;
 }
 
 .main-encapsle{
