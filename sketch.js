@@ -84,13 +84,17 @@ function draw()
   polyW_reset(1, wth, 0.6*width, logo.top);
   polyNegD_reset(0.15*width, 0.445*width, logo.top + 0.04*width);
   //poly_draw();
-  if(numFrames < 100) {
+  if(width > 600) 
+    var maxFrames = 100
+  else
+    var maxFrames = 50
+  if(numFrames < maxFrames) {
     for(var c = 0; c < vectors.length; c++)
       add_vectors(c, vectors[c].length, width, logo);
   }
   draw_vectors();
   strokeWeight(2);
-  var t = map(numFrames, 0,100, 0, 1);
+  var t = map(numFrames, 0,maxFrames, 0, 1);
   if(t > 1)
     t = 1;
   t = easing(t);
