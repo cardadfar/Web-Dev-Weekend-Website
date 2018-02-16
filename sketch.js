@@ -37,8 +37,8 @@ $( window ).resize(function() {
 
 function draw()
 {
-  width = document.body.scrollWidth;
-  height = 1.01*document.body.scrollHeight;
+  width = $(document).width();
+  height = $(document).height();
   createCanvas(width, height);
   numFrames++;
   vectorPath01 = [];
