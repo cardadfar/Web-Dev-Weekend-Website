@@ -84,13 +84,13 @@ function draw()
   polyW_reset(1, wth, 0.6*width, logo.top);
   polyNegD_reset(0.15*width, 0.445*width, logo.top + 0.04*width);
   //poly_draw();
-  if(numFrames < 200) {
+  if(numFrames < 100) {
     for(var c = 0; c < vectors.length; c++)
       add_vectors(c, vectors[c].length, width, logo);
   }
   draw_vectors();
   strokeWeight(2);
-  var t = map(numFrames, 0, 200, 0, 1);
+  var t = map(numFrames, 0,100, 0, 1);
   if(t > 1)
     t = 1;
   t = easing(t);
@@ -354,7 +354,7 @@ function poly_draw() {
 
 function add_vectors(c, i, width, logo) {
   var wth = document.body.scrollWidth;
-  var scl = 0.05*wth;
+  var scl = 0.08*wth;
   if(c < 5) {
     if(random() > 0.5)
       vectors[c][i] = createVector(random(-scl,scl) + vectors[c][i-1].x, vectors[c][i-1].y);
