@@ -99,13 +99,13 @@ function draw()
     t = 1;
   t = easing(t);
   
-  /*
+  
   stroke('#00bff3');
   line(0.24*width, logo.top+0.155*width, 0.24*width+0.155*width*t, logo.top+0.155*width);
   stroke('#e24c9b');
   line(0.24*width+0.155*width*t, logo.top+0.155*width, 0.24*width+0.31*width*t, logo.top+0.155*width);
   stroke('#00bff3');
-  line(0.24*width+0.31*width*t, logo.top+0.155*width, 0.24*width+0.465*width*t, logo.top+0.155*width);*/
+  line(0.24*width+0.31*width*t, logo.top+0.155*width, 0.24*width+0.465*width*t, logo.top+0.155*width);
   stroke('#912f63');
 
   if(mouseVectors.length > 0) {
@@ -486,43 +486,48 @@ function update_mousePath() {
 }
 
 function draw_edges() {
+  var scl = 500;
   for(var i = 0; i < 8; i++) {
     var loc = (frameCount+125*i)%1000;
     if(loc < 100) {
-      if(loc < abs(loc - 100))
-        var scl = loc;
-      else
-        var scl = abs(loc - 100);
       loc = map(loc, 0, 100, 0, 0.797*width);
       rect(0.1*width+loc, 115, 8, 8);
-      line(0.1*width+loc, 119, 0.1*width+loc-6*scl, 119);
+      if(loc < scl) {
+        line(0.1*width+loc, 119, 0.1*width, 119);
+        line(0.1*width, 119, 0.1*width, 119+(scl-loc));
+      }
+      else
+        line(0.1*width+loc, 119, 0.1*width+loc-scl, 119);
     }
     else if(loc < 450) {
-      if(abs(loc - 100) < abs(loc - 450))
-        var scl = abs(loc - 100);
-      else
-        var scl = abs(loc - 450);
       loc = map(loc, 100, 450, 0, 0.9635*height);
       rect(0.897*width, 115+loc, 8, 8);
-      line(0.897*width+4, 115+loc, 0.897*width+4, 115+loc-3*scl);
+      if(loc < scl) {
+        line(0.897*width+4, 119+loc, 0.897*width+4, 119);
+        line(0.897*width+4, 119, 0.897*width+4-(scl-loc), 119);
+      }
+      else
+        line(0.897*width+4, 115+loc, 0.897*width+4, 115+loc-scl);
     }
     else if(loc < 550) {
-      if(abs(loc - 450) < abs(loc - 550))
-        var scl = abs(loc - 450);
-      else
-        var scl = abs(loc - 550);
       loc = map(loc, 450, 550, 0.797*width, 0);
       rect(0.1*width+loc, 115+0.9635*height, 8, 8);
-      line(0.1*width+loc+8, 115+0.9635*height+4, 0.1*width+loc+8+6*scl, 115+0.9635*height+4);
+      if(loc > 0.797*width-scl) {
+        line(0.1*width+loc+4, 115+0.9635*height+4, 0.897*width+4, 115+0.9635*height+4);
+        line(0.897*width+4, 115+0.9635*height+4, 0.897*width+4, 115+0.9635*height+4-(scl-(0.797*width-loc)));
+      }
+      else
+        line(0.1*width+loc+8, 115+0.9635*height+4, 0.1*width+loc+8+scl, 115+0.9635*height+4);
     }
     else {
-      if(abs(loc - 550) < abs(loc - 1000))
-        var scl = abs(loc - 550);
-      else
-        var scl = abs(loc - 1000);
       loc = map(loc, 550, 1000, 0.9635*height, 0);
       rect(0.1*width-4, 115+loc, 8, 8);
-      line(0.1*width, 115+loc+8, 0.1*width, 115+loc+8+3*scl);
+      if(loc > 0.9635*height-scl) {
+        line(0.1*width, 115+loc+8, 0.1*width, 115+0.9635*height+4);
+        line(0.1*width, 115+0.9635*height+4, 0.1*width+(scl-(0.9635*height-loc)), 115+0.9635*height+4);
+      }
+      else
+        line(0.1*width, 115+loc+8, 0.1*width, 115+loc+8+scl);
     }
   }
 }
