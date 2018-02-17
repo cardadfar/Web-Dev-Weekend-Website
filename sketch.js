@@ -99,13 +99,14 @@ function draw()
     t = 1;
   t = easing(t);
   
+  /*
   stroke('#00bff3');
   line(0.24*width, logo.top+0.155*width, 0.24*width+0.155*width*t, logo.top+0.155*width);
   stroke('#e24c9b');
   line(0.24*width+0.155*width*t, logo.top+0.155*width, 0.24*width+0.31*width*t, logo.top+0.155*width);
   stroke('#00bff3');
-  line(0.24*width+0.31*width*t, logo.top+0.155*width, 0.24*width+0.465*width*t, logo.top+0.155*width);
-  stroke('#e24c9b');
+  line(0.24*width+0.31*width*t, logo.top+0.155*width, 0.24*width+0.465*width*t, logo.top+0.155*width);*/
+  stroke('#912f63');
 
   if(mouseVectors.length > 0) {
     add_mouseVectors();
@@ -444,11 +445,11 @@ function add_mouseVectors() {
   for(var i = 0; i < mouseVectors.length; i++) {
     for(var j = 0; j < mouseVectors[i].length; j++) {
       var indx = mouseVectors[i][j].length;
-      if(mouseVectors[i][j].length < 20) {
+      if(mouseVectors[i][j].length < 10) {
         if(random() > 0.5)
-          mouseVectors[i][j][indx] = createVector(mouseVectors[i][j][indx-1].x + random(-20,20), mouseVectors[i][j][indx-1].y);
+          mouseVectors[i][j][indx] = createVector(mouseVectors[i][j][indx-1].x + random(-40,40), mouseVectors[i][j][indx-1].y);
         else
-          mouseVectors[i][j][indx] = createVector(mouseVectors[i][j][indx-1].x, mouseVectors[i][j][indx-1].y + random(-20,20));
+          mouseVectors[i][j][indx] = createVector(mouseVectors[i][j][indx-1].x, mouseVectors[i][j][indx-1].y + random(-40,40));
       }
     }
     if(mousePercent[i] > 50)
