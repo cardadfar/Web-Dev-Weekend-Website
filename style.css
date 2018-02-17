@@ -364,6 +364,8 @@ a.blue_text:hover {
     .schedule-element {
         width: 60%;
         margin-left: 18%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         height: 30px;
     }
 

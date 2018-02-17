@@ -32,9 +32,6 @@ $( window ).resize(function() {
   for(var i = 0; i < vectors.length; i++)
     vectors[i] = [];
   numFrames = 0;
-  width = $(document).width();
-  height = $(document).height();
-  createCanvas(width, height);
 });
 
 
