@@ -28,6 +28,12 @@ function setup() {
     mousePath[i] = createVector(mouseX, mouseY);
 }
 
+$( window ).resize(function() {
+  for(var i = 0; i < vectors.length; i++)
+    vectors[i] = [];
+  numFrames = 0;
+});
+
 
 function draw()
 {
