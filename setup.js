@@ -25,11 +25,18 @@ function scrollFunction() {
             document.getElementById("label2").style.left = '100%';
             document.getElementById("label3").style.left = '100%';
             document.getElementById("label4").style.left = '100%';
-            document.getElementById("label5").style.left = '-5.5%';
-            document.getElementById("label6").style.left = '-5.5%';
-            document.getElementById("label7").style.left = '-5.5%';
+            document.getElementById("label5").style.left = '-65px';
+            document.getElementById("label6").style.left = '-65px';
+            document.getElementById("label7").style.left = '-65px';
 
         }
+        $('#label1').css('top', '85%');
+        $('#label2').css('top', '65%');
+        $('#label3').css('top', '45%');
+        $('#label4').css('top', '25%');
+        $('#label5').css('top', '65%');
+        $('#label6').css('top', '45%');
+        $('#label7').css('top', '25%');
     }
     else {
         $(".black-bar").css('opacity', '0.5');
@@ -62,6 +69,13 @@ function scrollFunction() {
             $('#label7').css('top', dif+15);
 
         }
+        $('#label1').css('left', '110%');
+        $('#label2').css('left', '84%');
+        $('#label3').css('left', '69%');
+        $('#label4').css('left', '54%');
+        $('#label5').css('left', '38%');
+        $('#label6').css('left', '22.5%');
+        $('#label7').css('left', '7%');
     }
 }
 
