@@ -486,7 +486,10 @@ function update_mousePath() {
 }
 
 function draw_edges() {
-  var scl = 500;
+  if(width < 600)
+    var scl = 200;
+  else
+    var scl = 500;
   for(var i = 0; i < 8; i++) {
     var loc = (frameCount+125*i)%1000;
     if(loc < 100) {
