@@ -335,15 +335,12 @@ a.blue_text:hover {
         font-size: 12px;
         width: 80%;
         margin-left: 10%;
-        text-align: left;
-        line-height: 90%;
     }
 
     .blue-text {
         font-size: 12px;
         width: 80%;
         margin-left: 10%;
-        line-height: 90%;
     }
 
     #header {
