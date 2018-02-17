@@ -88,3 +88,7 @@ $(".label").hover(function() {
 $("#label1").click(function() {
     $('html, body').animate({scrollTop:0}, 750);
 });
+
+$("#label7").click(function() {
+    window.location.href = "basics.html";
+});

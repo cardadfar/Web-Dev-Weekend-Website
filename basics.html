@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDW | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A talk series comprised of interactive workshops that teach the fundamentals of web development.">
+    <link rel="icon" href="assets/main_logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="basics-style.css">
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id=main style="background-color:#282828;">
+    <div class=black-bar></div>
+    <div class=label id=label1><img src="assets/button.png" style="width:100%"></div>
+    <div class=label id=label2><img src="assets/p5_button.png" style="width:100%"></div>
+    <div class=label id=label3><img src="assets/react_button.png" style="width:100%"></div>
+    <div class=label id=label4><img src="assets/design_button.png" style="width:100%"></div>
+    <div class=label id=label5><img src="assets/js_button.png" style="width:100%"></div>
+    <div class=label id=label6><img src="assets/html_button.png" style="width:100%"></div>
+    <div class=label id=label7><img src="assets/basics_button.png" style="width:100%"></div>
+    <div class=main-encapsle>
+        <script text="text/javascript" src="sketches/basics-sketch.js"></script>
+        <div name=top></div>
+        <div id=logo-space></div>
+        <div style="margin-left: 17%"">
+            <div id=main-logo style="height: 15vw"></div>
+        </div>
+        <div class=pink-text id=title-center>The Basics</div>
+        <div class=blue-text id=subtitle-center>read on as we demystify web development and prepare you for your first workshop</div>
+
+        <p class=blue-text>Many technologies make up the experience we call “The Web.” The following is an overview of the most common ones.</p>
+
+        <div class=pink-text id=header>Key Terms</div>
+        <div id=line-pre-01></div>
+        <div class="pink-text sub-header sub-header-first" id=line-obj-01>Web Browser</div>
+        <div class="blue-text sub-text">A program—such as Google Chrome, Mozilla Firefox, Apple Safari, or Internet Explorer—that retrieves the source code of a website and renders it in a way that you can interact with.</div>
+        <div class="pink-text sub-header" id=line-obj-02>Client</div>
+        <div class="blue-text sub-text">A program that request information from another computer. For example, your web browser acts as a client when it requests a web page from a server.</div>
+        <div class="pink-text sub-header" id="line-obj-03">Server</div>
+        <div class="blue-text sub-text">A computer that responds to requests from a client. Servers are often responsible for storing information permanently: when you create an account on a website, that information is stored on the server.</div>
+        <div class="pink-text sub-header" id="line-obj-03-5">Web Application</div>
+        <div class="blue-text sub-text">A more all encompassing term for all the code that goes into a particular web experience. This means the HTML and CSS code that makes up what you actually see, the JavaScript makes those pages interactive, and any code that runs on a web server. Because this is a lot to talk about, we generally break it up into two parts, the frontend and the backend.</div>
+        <p class=blue-text style="margin-top: 50px"> Most web development is split up into frontend and backend development, so let’s dive a little deeper into these areas.</p>
+
+        <div class=pink-text id=header>The Frontend</div>
+        <p class=blue-text style="margin-top: 50px">The frontend of a web application is everything that ends up running in the browser. It is written in three main languages, HTML, CSS, and Javascript.</p>
+        <p class=blue-text>HTML and CSS store information about a page. HTML contains the content, which could include text, images, videos, and any number of other things. Complementary to this, CSS stores information about how to display the content stored by the HTML. This includes layout, color, fonts, and other information about how our site looks. With just HTML and CSS we can create beautiful, informational web pages that display the same information for everyone who loads them.</p>
+        <p class=blue-text>On the other hand, JavaScript is a fully featured programming language. When run in a web browser, JavaScript can alter HTML and CSS on the fly, communicate with a web server, or perform computation all by itself. This opens the door to modern, interactive, experiences.</p>
+        <p class=blue-text>HTML, CSS and JavaScript still form the core of web development, but companies have built tools on top of them to make it easier to build good-looking, high performance websites.</p>
+
+        <div class=pink-text id=header>The Backend</div>
+        <p class=blue-text style="margin-top: 50px">The backend is all of the code that runs on the web server.</p>
+        <p class=blue-text>A backend is necessary if you want to store information long term, sign people in, or perform complex computations.</p>
+        <p class=blue-text>Most backends have a set of HTML, CSS, and JavaScript that is sent to the client on request, so that the client can interact with the backend. Different parts of the frontend are called using different routes or URLs, for example the route of this page is “/basics/” whereas the route of the homepage is just “/”. Finally, there is generally a database, which is where lots of information can be stored long term and accessed quickly.</p>
+        <p class=blue-text>Backends can be written in any programming language, but some languages are easier to use than others. In addition, to the language, web developers often use a web framework, which is a collection of code that handles common server tasks and helps organize code.</p>
+
+        <div class=pink-text id=header>Design</div>
+        <p class=blue-text style="margin-top: 50px">When creating a web application, it’s important to remember that in a good design can make or break your site’s success. Design is best described as all of the choices that go into making a website. Design is more than the way a website looks; a good design considers every aspect of a user’s experience. This includes how a user signs up, how information is laid out, and overall every action the user has to take inside your app. The goal of any good design is to be unobtrusive, intuitive, and pleasant.</p>
+        <p class=blue-text>We group the choices a designer makes about how a piece of software fits into a user’s life under the term User Experience, or UX. Another common term you will hear discussed in relation to UX is the UI, or User Interface. The user interface is what the user sees and actually interacts with. Wireframes, mockups and prototypes are examples of tools which facilitate the development of a good user experience.</p>
+        <p class=blue-text>Wireframes are like an outline to an essay. They’re non-functional, ugly, and generally use a visual style that will not end up in the app. They do help at visualizing a very rough an idea. Wireframing focuses on the broad ideas of an interface—the functionality and layout—rather than on the specific details.</p>
+        <p class=blue-text>Making mockups is like filling in your bulleted outline with the most important pieces of text. We say that they can be done with varying degrees of Fidelity. Low fidelity mockups serve roughly the same purpose as wireframes, while high fidelity mockups are pixel-perfect examples of what a developer should be implementing.</p>
+        <p class=blue-text>Prototypes are like rough drafts. With prototypes, users can actually interact with an interface, though it still may be rough and clunky. Prototypes are valuable because they can identify problems before developers take the time to implement a full design, which can save engineering resources.</p>
+
+        <div class=pink-text id=header>Deployment</div>
+        <p class=blue-text style="margin-top: 50px">After a website has been designed, and the frontend and backend implemented, it’s time for it to be deployed. Deployment is the process of taking the code a developer has written, and setting it up to run on a server where the whole world can interact with it. It is a very important step, but it can be complicated because software is often not developed in the same environment it is deployed in. Deploying and running a webapp is generally called operations, and it’s an important step in the life cycle of creating a web application.</p>
+
+        <div class=pink-text id=header>Attending More Workshops</div>
+        <p class=blue-text style="margin-top: 50px">Thank you for reading this guide, and we hope that you will join us for Web Dev Weekend!</p>
+        <p class=blue-text>We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).</p>
+        <p class=blue-text>If you haven’t already, <a class=pink_text href="https://scottylabs.org/">be sure to register!</a> You certainly don’t have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can’t wait, and we hope to see you there!</p>
+        <p class=blue-text>If you have any comments or questions about this guide, please write to hello at scottylabs dot org.</p>
+
+        <p class=blue-text style="margin-top: 50px; padding-bottom: 5vh;">Hosted with <span style="color:#e24c9b"><3</span> by <a class=pink_text href="https://scottylabs.org/">ScottyLabs.</a></p>
+    </div>
+    <script src="setup.js"></script>
+</body>
+</html>

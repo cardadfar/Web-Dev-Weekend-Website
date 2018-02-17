@@ -1,5 +1,6 @@
 
 var width, height;
+var vectorPath01 = [];
 var mouseVectors = [];
 var mouseVectorsCount;
 var mousePercent = [];
@@ -38,6 +39,60 @@ function draw()
     add_mouseVectors();
     draw_mouseVectors();
   }
+
+
+  var start = $("#line-pre-01").position();
+  var lineObj01 = $("#line-obj-01").position();
+  var lineObj02 = $("#line-obj-02").position();
+  var lineObj03 = $("#line-obj-03").position();
+  var lineObj03_5 = $("#line-obj-03-5").position();
+
+  if(width > 700) {
+    var x = .725*width;
+    var w = 0.475*width;
+  }
+  else {
+    var x = .825*width;
+    var w = 0.625*width;
+  }
+  var y = start.top;
+  var h = lineObj01.top - start.top + 30;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(0);
+
+  y += h;
+  h = lineObj02.top - lineObj01.top - 30;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+
+  y += h;
+  h = lineObj03.top - lineObj02.top;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+  y += h;
+  h = lineObj03_5.top - lineObj03.top;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+}
+
+function vectorPath01_reset(x, y, w, h) {
+  vectorPath01[0] = createVector(x, y);
+  vectorPath01[1] = createVector(x-w+20, y);
+  vectorPath01[2] = createVector(x-w, y+20);
+  vectorPath01[3] = createVector(x-w, y+20+h);
+  vectorPath01[4] = createVector(x-0.96*w, y+40+h);
+  vectorPath01[5] = createVector(x-0.93*w, y+40+h);
+}
+
+function vectorPath01_draw(start) {
+  beginShape();
+  for(var i = start; i < vectorPath01.length; i++)
+    vertex(vectorPath01[i].x, vectorPath01[i].y);
+  endShape();
+  rect(vectorPath01[5].x, vectorPath01[5].y-5, 10, 10);
 }
 
 function mousePressed() {
