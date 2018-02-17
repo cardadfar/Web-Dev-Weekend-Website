@@ -32,6 +32,9 @@ $( window ).resize(function() {
   for(var i = 0; i < vectors.length; i++)
     vectors[i] = [];
   numFrames = 0;
+  width = $(document).width();
+  height = $(document).height();
+  createCanvas(width, height);
 });
 
 
@@ -84,7 +87,7 @@ function draw()
   polyW_reset(1, wth, 0.6*width, logo.top);
   polyNegD_reset(0.15*width, 0.445*width, logo.top + 0.04*width);
   //poly_draw();
-  if(width > 600) 
+  if(width > 700) 
     var maxFrames = 100
   else
     var maxFrames = 50
@@ -120,7 +123,7 @@ function draw()
   var lineObj02 = $("#line-obj-02").position();
   var lineObj03 = $("#line-obj-03").position();
 
-  if(width > 600) {
+  if(width > 700) {
     var x = .725*width;
     var w = 0.475*width;
   }
@@ -486,7 +489,7 @@ function update_mousePath() {
 }
 
 function draw_edges() {
-  if(width < 600)
+  if(width < 700)
     var scl = 200;
   else
     var scl = 500;
