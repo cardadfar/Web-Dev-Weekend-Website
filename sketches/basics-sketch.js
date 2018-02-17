@@ -23,7 +23,7 @@ function draw()
   stroke(226,76,155);
   strokeWeight(1);
   noFill();
-
+  
   update_mousePath();
   beginShape();
   for(var i = 0; i < mousePath.length; i++)
