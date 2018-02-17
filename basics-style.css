@@ -6,3 +6,18 @@
 .sub-header-first {
     margin-top: 58px;
 }
+
+.line {
+    background: #e24c9b;
+    width: 60%;
+    height: 2px;
+    margin-left: 18%;
+}
+
+@media screen and (max-width: 700px) {
+    .line {
+        width: 80%;
+        height: 1px;
+        margin-left: 10%;
+    }
+}
