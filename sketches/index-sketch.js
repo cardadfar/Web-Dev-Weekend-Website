@@ -158,6 +158,10 @@ function draw()
   start = $("#line-pre-03").position();
   var lineObj05 = $("#line-obj-05").position();
   var lineObj06 = $("#line-obj-06").position();
+  var lineObj07 = $("#line-obj-07").position();
+  var lineObj08 = $("#line-obj-08").position();
+  var lineObj09 = $("#line-obj-09").position();
+
   y = start.top;
   h = lineObj05.top - start.top - 70;
   vectorPath01_reset(x,y,w,h);
@@ -167,6 +171,23 @@ function draw()
   h = lineObj06.top - lineObj05.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(2);
+
+  y += h;
+  h = lineObj07.top - lineObj06.top;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+  y += h;
+  h = lineObj08.top - lineObj07.top;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+  y += h;
+  h = lineObj09.top - lineObj08.top;
+  vectorPath01_reset(x,y,w,h);
+  vectorPath01_draw(2);
+
+
 
   dateObj01 = $("#date-line-01").position();
   dateObj02 = $("#date-line-02").position();
