@@ -507,14 +507,19 @@ function update_mousePath() {
 }
 
 function draw_edges() {
-  if(width < 700)
+  if(width < 700) {
     var scl = 200;
-  else
+    var spd = 3000;
+  }
+  else {
     var scl = 500;
+    var spd = 1000;
+  }
+  var total = width+height+width+height;
   for(var i = 0; i < 8; i++) {
-    var loc = (frameCount+125*i)%1000;
-    if(loc < 100) {
-      loc = map(loc, 0, 100, 0, 0.797*width);
+    var loc = ((total/spd)*frameCount+(total*i/8))%total;
+    if(loc < width) {
+      loc = map(loc, 0, width, 0, 0.797*width);
       rect(0.1*width+loc, 115, 8, 8);
       if(loc < scl) {
         line(0.1*width+loc, 119, 0.1*width, 119);
@@ -523,8 +528,8 @@ function draw_edges() {
       else
         line(0.1*width+loc, 119, 0.1*width+loc-scl, 119);
     }
-    else if(loc < 450) {
-      loc = map(loc, 100, 450, 0, 0.9635*height);
+    else if(loc < width+height) {
+      loc = map(loc, width, width+height, 0, 0.9635*height);
       rect(0.897*width, 115+loc, 8, 8);
       if(loc < scl) {
         line(0.897*width+4, 119+loc, 0.897*width+4, 119);
@@ -533,8 +538,8 @@ function draw_edges() {
       else
         line(0.897*width+4, 115+loc, 0.897*width+4, 115+loc-scl);
     }
-    else if(loc < 550) {
-      loc = map(loc, 450, 550, 0.797*width, 0);
+    else if(loc < 2*width+height) {
+      loc = map(loc, width+height, 2*width+height, 0.797*width, 0);
       rect(0.1*width+loc, 115+0.9635*height, 8, 8);
       if(loc > 0.797*width-scl) {
         line(0.1*width+loc+4, 115+0.9635*height+4, 0.897*width+4, 115+0.9635*height+4);
@@ -544,7 +549,7 @@ function draw_edges() {
         line(0.1*width+loc+8, 115+0.9635*height+4, 0.1*width+loc+8+scl, 115+0.9635*height+4);
     }
     else {
-      loc = map(loc, 550, 1000, 0.9635*height, 0);
+      loc = map(loc, 2*width+height, 2*width+2*height, 0.9635*height, 0);
       rect(0.1*width-4, 115+loc, 8, 8);
       if(loc > 0.9635*height-scl) {
         line(0.1*width, 115+loc+8, 0.1*width, 115+0.9635*height+4);

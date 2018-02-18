@@ -56,12 +56,12 @@ function scrollFunction() {
                 var p = $(".black-bar").position();
                 $(".black-bar").css('position', 'absolute');
                 $(".black-bar").css('top', p.top);
-                $('#label2').css('top', '-7%');
-                $('#label3').css('top', '-7%');
-                $('#label4').css('top', '-7%');
-                $('#label5').css('top', '-7%');
-                $('#label6').css('top', '-7%');
-                $('#label7').css('top', '-7%');
+                $('#label2').css('top', '-85px');
+                $('#label3').css('top', '-85px');
+                $('#label4').css('top', '-85px');
+                $('#label5').css('top', '-85px');
+                $('#label6').css('top', '-85px');
+                $('#label7').css('top', '-85px');
                 lastScrollTop = element;
             }
             else {
