@@ -91,6 +91,18 @@ $("#label1").click(function() {
     $('html, body').animate({scrollTop:0}, 750);
 });
 
+$("#label2").click(function() {
+    window.location.href = "p5js.html";
+});
+
+$("#label3").click(function() {
+    window.location.href = "react.html";
+});
+
+$("#label4").click(function() {
+    window.location.href = "design.html";
+});
+
 $("#label5").click(function() {
     window.location.href = "javascript.html";
 });
