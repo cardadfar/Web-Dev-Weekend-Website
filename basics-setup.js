@@ -7,7 +7,7 @@ function scrollFunction() {
     var height = $(window).height();
     var width = $(window).width();
     var element = $(window).scrollTop();
-    if($(window).width() > 600) {
+    if($(window).width() > 700) {
         $(".black-bar").css('opacity', '0');
         if (element > 20) {
 
