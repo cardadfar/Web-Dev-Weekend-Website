@@ -52,7 +52,7 @@ function scrollFunction() {
         }
         else {
             $('.logo').css('width', '100%');
-            $('#label2').css('left', '69%');
+            $('#label3').css('left', '69%');
             if (lastScrollTop < element) {
                 var p = $(".black-bar").position();
                 $(".black-bar").css('position', 'absolute');
