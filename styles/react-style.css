@@ -17,6 +17,7 @@
 #label3 {
     top: 25%;
     left: calc(50% - 105px);
+    text-align: center;
     transition: left 1s, top 1s, opacity 0.5s;
 }
 
