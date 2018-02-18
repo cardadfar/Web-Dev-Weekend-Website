@@ -30,6 +30,16 @@
 
 @media screen and (max-width: 700px) {
 
+    .sub-header {
+        font-size: 16px;
+        margin-top: 33px;
+        margin-left: 25%;
+    }
+
+    .sub-header-first {
+        margin-top: 62px;
+    }
+
     .line {
         width: 80%;
         height: 1px;
