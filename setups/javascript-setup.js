@@ -20,7 +20,7 @@ function scrollFunction() {
             document.getElementById("label7").style.left = '2%';
             $('.logo').css('height', '0%');
             $('.logo').css('width', '100%');
-            $('#label6').css('top', '45%');
+            $('#label5').css('top', '65%');
 
         } else {
 
@@ -28,31 +28,31 @@ function scrollFunction() {
             document.getElementById("label2").style.left = '100%';
             document.getElementById("label3").style.left = '100%';
             document.getElementById("label4").style.left = '100%';
-            document.getElementById("label5").style.left = '-65px';
-            document.getElementById("label6").style.left = 'calc(50% - 100px)';
+            document.getElementById("label5").style.left = 'calc(50% - 100px)';
+            document.getElementById("label6").style.left = '-65px';
             document.getElementById("label7").style.left = '-65px';
             $('.logo').css('width', '300%');
-            $('#label6').css('top', '25%');
+            $('#label5').css('top', '25%');
 
         }
         $('#label1').css('top', '85%');
         $('#label2').css('top', '65%');
         $('#label3').css('top', '45%');
         $('#label4').css('top', '25%');
-        $('#label5').css('top', '65%');
+        $('#label6').css('top', '45%');
         $('#label7').css('top', '25%');
     }
     else {
         $(".black-bar").css('opacity', '0.5');
 
         if (element < 20) {
-            $('#label6').css('left', 'calc(50% - 50px)');
-            $('#label6').css('top', '22%');
+            $('#label5').css('left', 'calc(50% - 50px)');
+            $('#label5').css('top', '22%');
             $('.logo').css('width', '300%');
         }
         else {
             $('.logo').css('width', '100%');
-            $('#label6').css('left', '22%');
+            $('#label5').css('left', '38%');
             if (lastScrollTop < element) {
                 var p = $(".black-bar").position();
                 $(".black-bar").css('position', 'absolute');
@@ -87,7 +87,7 @@ function scrollFunction() {
         $('#label2').css('left', '84%');
         $('#label3').css('left', '69%');
         $('#label4').css('left', '54%');
-        $('#label5').css('left', '38%');
+        $('#label6').css('left', '22%');
         $('#label7').css('left', '7%');
     }
 }
