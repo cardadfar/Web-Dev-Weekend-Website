@@ -59,12 +59,12 @@ function draw()
     var w = 0.625*width;
   }
   var y = start.top;
-  var h = lineObj01.top - start.top + 30;
+  var h = lineObj01.top - start.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(0);
 
   y += h;
-  h = lineObj02.top - lineObj01.top - 30;
+  h = lineObj02.top - lineObj01.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(2);
 
@@ -103,12 +103,12 @@ function draw()
   var lineObj13 = $("#line-obj-13").position();
 
   y = start.top;
-  h = lineObj08.top - start.top + 30;
+  h = lineObj08.top - start.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(0);
 
   y += h;
-  h = lineObj09.top - lineObj08.top - 30;
+  h = lineObj09.top - lineObj08.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(2);
 
@@ -139,12 +139,12 @@ function draw()
   var lineObj17 = $("#line-obj-17").position();
 
   y = start.top;
-  h = lineObj14.top - start.top + 30;
+  h = lineObj14.top - start.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(0);
 
   y += h;
-  h = lineObj15.top - lineObj14.top - 30;
+  h = lineObj15.top - lineObj14.top;
   vectorPath01_reset(x,y,w,h);
   vectorPath01_draw(2);
 
