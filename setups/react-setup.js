@@ -46,7 +46,8 @@ function scrollFunction() {
         $(".black-bar").css('opacity', '0.5');
 
         if (element < 20) {
-            $('#label3').css('left', 'calc(50% - 50px)');
+            var wth = $('#label3').width();
+            $('#label3').css('left', width/2 - (3/2)*wth);
             $('#label3').css('top', '22%');
             $('.logo').css('width', '300%');
         }
