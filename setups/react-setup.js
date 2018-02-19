@@ -14,7 +14,6 @@ function resetLogo() {
         $('#label3').css('left', width/2 - 0.1*width);
         $('.logo').css('width', '22vw');
     }
-
     $('#label3').css('top', '25%');
 }
 
@@ -64,10 +63,8 @@ function scrollFunction() {
     else {
         $(".black-bar").css('opacity', '0.5');
 
-        if (element < 20) {
-            var wth = $('#label3').width();
+        if (element < 20)
             resetLogo();
-        }
         else {
             $('.logo').css('width', '100%');
             $('#label3').css('left', '69%');

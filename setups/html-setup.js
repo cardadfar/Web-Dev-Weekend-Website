@@ -1,12 +1,21 @@
 
 var lastScrollTop = 0;
 
-$( document ).ready(function() {
+$(document).ready(resetLogo());
+
+function resetLogo() {
     var width = $(window).width();
-    var wth = $('#label6').width();
-    $('#label6').css('left', width/2 - (3/2)*wth);
-    $('.logo').css('width', '300%');
-});
+    var wth = $('#label3').width();
+    if(width > 700) {
+        $('#label3').css('left', width/2 - 0.085*width);
+        $('.logo').css('width', '16.5vw');
+    }
+    else {
+        $('#label3').css('left', width/2 - 0.1*width);
+        $('.logo').css('width', '22vw');
+    }
+    $('#label3').css('top', '25%');
+}
 
 window.onscroll = function() {scrollFunction()};
 
@@ -38,8 +47,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '-65px';
             document.getElementById("label6").style.left = 'calc(50% - 100px)';
             document.getElementById("label7").style.left = '-65px';
-            $('.logo').css('width', '300%');
-            $('#label6').css('top', '25%');
+            resetLogo();
 
         }
         $('#label1').css('top', '85%');
@@ -52,12 +60,8 @@ function scrollFunction() {
     else {
         $(".black-bar").css('opacity', '0.5');
 
-        if (element < 20) {
-             var wth = $('#label6').width();
-            $('#label6').css('left', width/2 - (3/2)*wth);
-            $('#label6').css('top', '22%');
-            $('.logo').css('width', '300%');
-        }
+        if (element < 20) 
+            resetLogo();
         else {
             $('.logo').css('width', '100%');
             $('#label6').css('left', '22%');
