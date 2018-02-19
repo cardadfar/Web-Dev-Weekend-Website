@@ -19,7 +19,6 @@ function draw()
 {
   width = $(document).width();
   height = $(document).height();
-  console.log(height)
   createCanvas(width, height);
   stroke(226,76,155);
   strokeWeight(1);
