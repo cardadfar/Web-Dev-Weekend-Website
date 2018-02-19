@@ -102,14 +102,16 @@ function draw_edges() {
   if(width < 700) {
     var scl = 200;
     var spd = 3000;
+    var count = 8;
   }
   else {
     var scl = 500;
     var spd = 1000;
+    var count = 4;
   }
   var total = width+height+width+height;
   for(var i = 0; i < 8; i++) {
-    var loc = ((total/spd)*frameCount+(total*i/8))%total;
+    var loc = ((total/spd)*frameCount+(total*i/count))%total;
     if(loc < width) {
       loc = map(loc, 0, width, 0, 0.797*width);
       rect(0.1*width+loc, 115, 8, 8);
