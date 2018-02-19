@@ -48,7 +48,7 @@
 
     #label4 {
         top: 22%;
-        left: calc(50% - 50px);
+        left: 55%;
         transition: left 1s, top 1s, opacity 0.5s;
     }
 }
