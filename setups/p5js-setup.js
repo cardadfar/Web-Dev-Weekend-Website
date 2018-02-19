@@ -5,16 +5,16 @@ $(document).ready(resetLogo());
 
 function resetLogo() {
     var width = $(window).width();
-    var wth = $('#label3').width();
+    var wth = $('#label2').width();
     if(width > 700) {
-        $('#label3').css('left', width/2 - 0.085*width);
+        $('#label2').css('left', width/2 - 0.085*width);
         $('.logo').css('width', '16.5vw');
     }
     else {
-        $('#label3').css('left', width/2 - 0.1*width);
+        $('#label2').css('left', width/2 - 0.1*width);
         $('.logo').css('width', '22vw');
     }
-    $('#label3').css('top', '25%');
+    $('#label2').css('top', '25%');
 }
 
 $( document ).ready(function() {
@@ -48,7 +48,6 @@ function scrollFunction() {
         } else {
 
             document.getElementById("label1").style.left = '100%';
-            document.getElementById("label2").style.left = 'calc(50% - 105px)';
             document.getElementById("label3").style.left = '100%';
             document.getElementById("label4").style.left = '100%';
             document.getElementById("label5").style.left = '-65px';

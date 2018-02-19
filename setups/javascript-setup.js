@@ -5,16 +5,16 @@ $(document).ready(resetLogo());
 
 function resetLogo() {
     var width = $(window).width();
-    var wth = $('#label3').width();
+    var wth = $('#label5').width();
     if(width > 700) {
-        $('#label3').css('left', width/2 - 0.085*width);
+        $('#label5').css('left', width/2 - 0.085*width);
         $('.logo').css('width', '16.5vw');
     }
     else {
-        $('#label3').css('left', width/2 - 0.1*width);
+        $('#label5').css('left', width/2 - 0.1*width);
         $('.logo').css('width', '22vw');
     }
-    $('#label3').css('top', '25%');
+    $('#label5').css('top', '25%');
 }
 
 window.onscroll = function() {scrollFunction()};
@@ -44,7 +44,6 @@ function scrollFunction() {
             document.getElementById("label2").style.left = '100%';
             document.getElementById("label3").style.left = '100%';
             document.getElementById("label4").style.left = '100%';
-            document.getElementById("label5").style.left = 'calc(50% - 100px)';
             document.getElementById("label6").style.left = '-65px';
             document.getElementById("label7").style.left = '-65px';
             resetLogo();
