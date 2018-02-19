@@ -145,7 +145,7 @@ function draw_edges() {
       loc = map(loc, width+height, 2*width+height, 0.797*width, 0);
       rect(0.1*width+loc, border_end.top-4, 8, 8);
       if(loc > 0.797*width-scl) {
-        line(0.1*width+loc+4, border_end.top, 0.897*width+4, border_end.top);
+        line(0.1*width+loc+8, border_end.top, 0.897*width+4, border_end.top);
         line(0.897*width+4, border_end.top, 0.897*width+4, border_end.top-(scl-(0.797*width-loc)));
       }
       else
@@ -155,12 +155,12 @@ function draw_edges() {
     else {
       loc = map(loc, 2*width+height, 2*width+2*height, height, 0);
       rect(0.1*width-4, border_start.top+loc-8, 8, 8);
-      if(loc > 0.9635*height-scl) {
+      if(loc > height-scl) {
         line(0.1*width, border_start.top+loc, 0.1*width, border_end.top);
-        line(0.1*width, border_end.top, 0.1*width+(scl-(0.9635*height-loc)), border_end.top);
+        line(0.1*width, border_end.top, 0.1*width+(scl-(height-loc)), border_end.top);
       }
       else
-        line(0.1*width, 115+loc+8, 0.1*width, 115+loc+8+scl);
+        line(0.1*width, border_start.top+loc, 0.1*width, border_start.top+loc+8+scl);
     }
   }
 }
