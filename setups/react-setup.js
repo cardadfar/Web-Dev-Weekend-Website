@@ -7,6 +7,7 @@ $( document ).ready(function() {
         var wth = $('#label3').width();
         $('#label3').css('left', width/2 - (3/2)*wth);
     }
+    $('.logo').css('width', '300%');
 });
 
 window.onscroll = function() {scrollFunction()};
