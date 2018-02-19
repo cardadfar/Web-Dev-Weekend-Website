@@ -17,13 +17,6 @@ function resetLogo() {
     $('#label2').css('top', '25%');
 }
 
-$( document ).ready(function() {
-    var width = $(window).width();
-    var wth = $('#label2').width();
-    $('#label2').css('left', width/2 - (3/2)*wth);
-    $('.logo').css('width', '300%');
-});
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
