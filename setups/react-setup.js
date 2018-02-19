@@ -1,7 +1,7 @@
 
 var lastScrollTop = 0;
 
-$(document).ready(resetLogo());
+$(document).ready(scrollFunction());
 
 function resetLogo() {
     var width = $(window).width();

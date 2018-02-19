@@ -1,6 +1,8 @@
 
 var lastScrollTop = 0;
 
+$(document).ready(scrollFunction());
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
