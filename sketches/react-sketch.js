@@ -100,17 +100,20 @@ function update_mousePath() {
 }
 
 function draw_edges() {
+  var border_start = $('#border-start').position();
+  var border_end = $('#border-end').position();
+  height = border_end.top - border_start.top + 70;
   if(width < 700) {
     var scl = 200;
     var spd = 3000;
     var count = 8;
-    height = 0.91*height;
+    //height = 0.91*height;
   }
   else {
     var scl = 500;
     var spd = 1000;
     var count = 5;
-    height = 0.94*height;
+    //height = 0.94*height;
   }
   var total = width+height+width+height;
   for(var i = 0; i < 8; i++) {
