@@ -4,8 +4,8 @@ var lastScrollTop = 0;
 $( document ).ready(function() {
     var width = $(window).width();
     if(width < 700) {
-        var wth = $('#label3').width();
-        $('#label3').css('left', width/2 - (3/2)*wth);
+        var wth = $('#label7').width();
+        $('#label7').css('left', width/2 - (3/2)*wth);
     }
     $('.logo').css('width', '300%');
 });
@@ -54,7 +54,7 @@ function scrollFunction() {
         $(".black-bar").css('opacity', '0.5');
 
         if (element < 20) {
-             var wth = $('#label3').width();
+             var wth = $('#label7').width();
             $('#label7').css('left', width/2 - (3/2)*wth);
             $('#label7').css('top', '22%');
             $('.logo').css('width', '300%');
