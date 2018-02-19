@@ -103,11 +103,16 @@ function draw_edges() {
     var scl = 200;
     var spd = 3000;
     var count = 8;
+    if(width < 400)
+      height = 0.91*height;
+    else
+      height = 0.89*height;
   }
   else {
     var scl = 500;
     var spd = 1000;
     var count = 4;
+    height = 0.94*height;
   }
   var total = width+height+width+height;
   for(var i = 0; i < 8; i++) {
