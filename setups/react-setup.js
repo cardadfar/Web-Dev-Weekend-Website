@@ -6,8 +6,15 @@ $(document).ready(resetLogo());
 function resetLogo() {
     var width = $(window).width();
     var wth = $('#label3').width();
-    $('#label3').css('left', width/2 - 0.085*width);
-    $('.logo').css('width', '16.5vw');
+    if(width > 700) {
+        $('#label3').css('left', width/2 - 0.085*width);
+        $('.logo').css('width', '16.5vw');
+    }
+    else {
+        $('#label3').css('left', width/2 - 0.1*width);
+        $('.logo').css('width', '22vw');
+    }
+
     $('#label3').css('top', '25%');
 }
 
@@ -59,9 +66,7 @@ function scrollFunction() {
 
         if (element < 20) {
             var wth = $('#label3').width();
-            $('#label3').css('left', width/2 - (3/2)*wth);
-            $('#label3').css('top', '22%');
-            $('.logo').css('width', '300%');
+            resetLogo();
         }
         else {
             $('.logo').css('width', '100%');
