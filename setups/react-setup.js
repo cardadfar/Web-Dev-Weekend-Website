@@ -5,7 +5,7 @@ $( document ).ready(function() {
     var width = $(window).width();
     var wth = $('#label3').width();
     $('#label3').css('left', width/2 - (3/2)*wth);
-    $('.logo').css('width', '250%');
+    $('.logo').css('width', '300%');
 });
 
 window.onscroll = function() {scrollFunction()};
@@ -38,7 +38,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '-65px';
             document.getElementById("label6").style.left = '-65px';
             document.getElementById("label7").style.left = '-65px';
-            $('.logo').css('width', '250%');
+            $('.logo').css('width', '300%');
             $('#label3').css('top', '25%');
 
         }
