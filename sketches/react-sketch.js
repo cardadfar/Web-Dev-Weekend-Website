@@ -102,7 +102,7 @@ function update_mousePath() {
 function draw_edges() {
   var border_start = $('#border-start').position();
   var border_end = $('#border-end').position();
-  height = border_end.top - border_start.top + 70;
+  height = border_end.top - border_start.top + 0.05*height;
   if(width < 700) {
     var scl = 200;
     var spd = 3000;
