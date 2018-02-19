@@ -142,7 +142,6 @@ a.blue_text:hover {
 #title-center {
     font-size: 4.9vw;
     font-style: italic;
-    margin-top: 
     text-align: center;
 }
 
@@ -335,7 +334,7 @@ a.blue_text:hover {
         font-size: 7vw;
     }
 
-    #subtitle {
+    #subtitle-center {
         font-size: 5vw;
     }
 
