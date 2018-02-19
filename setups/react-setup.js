@@ -3,10 +3,8 @@ var lastScrollTop = 0;
 
 $( document ).ready(function() {
     var width = $(window).width();
-    if(width < 700) {
-        var wth = $('#label3').width();
-        $('#label3').css('left', width/2 - (3/2)*wth);
-    }
+    var wth = $('#label3').width();
+    $('#label3').css('left', width/2 - (3/2)*wth);
     $('.logo').css('width', '300%');
 });
 

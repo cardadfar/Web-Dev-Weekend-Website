@@ -16,12 +16,13 @@
 
 #label4 {
     top: 25%;
-    left: calc(50% - 105px);
+    left: 55%;
+    text-align: center;
     transition: left 1s, top 1s, opacity 0.5s;
 }
 
 .logo {
-    width: 300%;
+    width: 0%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +49,5 @@
 
     #label4 {
         top: 22%;
-        left: 55%;
-        transition: left 1s, top 1s, opacity 0.5s;
     }
 }
