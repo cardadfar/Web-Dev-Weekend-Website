@@ -142,7 +142,7 @@ a.blue_text:hover {
 #title-center {
     font-size: 4.9vw;
     font-style: italic;
-    margin-bottom: -5px;
+    margin-top: 
     text-align: center;
 }
 
@@ -331,14 +331,22 @@ a.blue_text:hover {
         left: 7%;
     }
 
+    #title-center {
+        font-size: 7vw;
+    }
+
+    #subtitle {
+        font-size: 5vw;
+    }
+
     .pink-text {
-        font-size: 12px;
+        font-size: 11px;
         width: 80%;
         margin-left: 10%;
     }
 
     .blue-text {
-        font-size: 12px;
+        font-size: 11px;
         width: 80%;
         margin-left: 10%;
     }
@@ -383,7 +391,7 @@ a.blue_text:hover {
     }
 
     #schedule-talk {
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 
     }
 
