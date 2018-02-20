@@ -101,6 +101,10 @@ a.blue_text:hover {
     transition: left 1s, top 1s, opacity 0.5s;
 }
 
+#image_label {
+    width: 100%;
+}
+
 .main-encapsle{
     margin-left: 10%;
     width: 80%;
@@ -302,32 +306,36 @@ a.blue_text:hover {
 
     #label2 {
         top: 3%;
-        left: 84%;
+        left: 80%;
     }
 
     #label3 {
         top: 3%;
-        left: 69%;
+        left: 65%;
     }
 
     #label4 {
         top: 3%;
-        left: 54%;
+        left: 50%;
     }
 
     #label5 {
         top: 3%;
-        left: 38%;
+        left: 35%;
     }
 
     #label6 {
         top: 3%;
-        left: 22.5%;
+        left: 20%;
     }
 
     #label7 {
         top: 3%;
-        left: 7%;
+        left: 5%;
+    }
+
+    #image_label {
+        width: 125%;
     }
 
     #title-center {
