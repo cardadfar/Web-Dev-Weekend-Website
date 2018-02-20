@@ -98,7 +98,7 @@ function scrollFunction() {
         }
         $('#label1').css('left', '110%');
         $('#label3').css('left', '69%');
-        $('#label4').css('left', '54%');
+        $('#label4').css('left', '52%');
         $('#label5').css('left', '38%');
         $('#label6').css('left', '22%');
         $('#label7').css('left', '7%');
