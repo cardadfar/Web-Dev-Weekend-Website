@@ -1,11 +1,10 @@
 
 var lastScrollTop = 0;
 
-$(document).ready(resetLogo());
+$(document).ready(scrollFunction());
 
 function resetLogo() {
     var width = $(window).width();
-    var wth = $('#label2').width();
     if(width > 700) {
         $('#label2').css('left', width/2 - 0.085*width);
         $('.logo').css('width', '16.5vw');

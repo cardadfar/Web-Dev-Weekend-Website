@@ -5,6 +5,8 @@ $(document).ready(scrollFunction());
 
 window.onscroll = function() {scrollFunction()};
 
+$(window).on('resize', function() {scrollFunction()});
+
 function scrollFunction() {
     var height = $(window).height();
     var width = $(window).width();
