@@ -61,8 +61,8 @@ function scrollFunction() {
         if (element < 20) 
             resetLogo();
         else {
-            $('.logo').css('width', '100%');
-            $('#label6').css('left', '22%');
+            $('.logo').css('width', '125%');
+            $('#label6').css('left', '21%');
             if (lastScrollTop < element) {
                 var p = $(".black-bar").position();
                 $(".black-bar").css('position', 'absolute');
