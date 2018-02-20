@@ -94,11 +94,11 @@ function scrollFunction() {
             }
         }
         $('#label1').css('left', '110%');
-        $('#label2').css('left', '84%');
-        $('#label3').css('left', '69%');
-        $('#label5').css('left', '38%');
-        $('#label6').css('left', '22%');
-        $('#label7').css('left', '7%');
+        $('#label2').css('left', '83%');
+        $('#label3').css('left', '68%');
+        $('#label5').css('left', '37%');
+        $('#label6').css('left', '21%');
+        $('#label7').css('left', '6%');
     }
 }
 
