@@ -105,7 +105,7 @@ a.blue_text:hover {
     top: 10%;
     left: -65px;
     width: 45px;
-    transition: left 0.75s, top 1s, opacity 0.5s;
+    transition: top 1s, left 0.75s, top 1s, opacity 0.5s;
 }
 
 #image_label {
