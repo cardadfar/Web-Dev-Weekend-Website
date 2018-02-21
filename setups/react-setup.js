@@ -35,6 +35,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '2%';
             document.getElementById("label6").style.left = '2%';
             document.getElementById("label7").style.left = '2%';
+            document.getElementById("label8").style.left = '2%';
             $('.logo').css('height', '0%');
             $('.logo').css('width', '100%');
             $('#label3').css('top', '45%');
@@ -47,6 +48,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '-65px';
             document.getElementById("label6").style.left = '-65px';
             document.getElementById("label7").style.left = '-65px';
+            document.getElementById("label8").style.left = '-65px';
             resetLogo();
             
 
@@ -137,4 +139,8 @@ $("#label6").click(function() {
 
 $("#label7").click(function() {
     window.location.href = "basics.html";
+});
+
+$("#label8").click(function() {
+    window.location.href = "index.html";
 });

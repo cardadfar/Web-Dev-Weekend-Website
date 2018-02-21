@@ -101,6 +101,13 @@ a.blue_text:hover {
     transition: left 1s, top 1s, opacity 0.5s;
 }
 
+#label8 {
+    top: 10%;
+    left: -65px;
+    width: 45px;
+    transition: left 0.75s, top 1s, opacity 0.5s;
+}
+
 #image_label {
     width: 100%;
 }
@@ -332,6 +339,12 @@ a.blue_text:hover {
     #label7 {
         top: 3%;
         left: 6%;
+    }
+
+    #label8 {
+        top: calc(97% - 35px);
+        left: 3%;
+        width: 35px;
     }
 
     #image_label {

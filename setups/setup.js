@@ -24,6 +24,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '2%';
             document.getElementById("label6").style.left = '2%';
             document.getElementById("label7").style.left = '2%';
+            document.getElementById("label8").style.left = '2%';
 
         } else {
 
@@ -34,6 +35,7 @@ function scrollFunction() {
             document.getElementById("label5").style.left = '-65px';
             document.getElementById("label6").style.left = '-65px';
             document.getElementById("label7").style.left = '-65px';
+            document.getElementById("label8").style.left = '-65px';
 
         }
         $('#label1').css('top', '85%');
@@ -117,4 +119,8 @@ $("#label6").click(function() {
 
 $("#label7").click(function() {
     window.location.href = "basics.html";
+});
+
+$("#label8").click(function() {
+    window.location.href = "index.html";
 });
