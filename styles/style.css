@@ -311,6 +311,12 @@ a.blue_text:hover {
         width: 9%;
     }
 
+    #label1 {
+        top: calc(97% - 35px);
+        left: calc(95% - 35px);
+        width: 35px;
+    }
+
     #label2 {
         top: 3%;
         left: 83%;

@@ -71,12 +71,14 @@ function scrollFunction() {
                 var p = $(".black-bar").position();
                 $(".black-bar").css('position', 'absolute');
                 $(".black-bar").css('top', p.top);
+                $('#label1').css('top', height);
                 $('#label2').css('top', '-85px');
                 $('#label3').css('top', '-85px');
                 $('#label4').css('top', '-85px');
                 $('#label5').css('top', '-85px');
                 $('#label6').css('top', '-85px');
                 $('#label7').css('top', '-85px');
+                $('#label8').css('top', height);
                 lastScrollTop = element;
             }
             else {
@@ -88,21 +90,24 @@ function scrollFunction() {
                     lastScrollTop = element;
                 }
                 $(".black-bar").css('top', dif);
+                $('#label1').css('top', 'calc(97% - 35px)');
                 $('#label2').css('top', dif+15);
                 $('#label3').css('top', dif+15);
                 $('#label4').css('top', dif+15);
                 $('#label5').css('top', dif+15);
                 $('#label6').css('top', dif+15);
                 $('#label7').css('top', dif+15);
-
+                $('#label8').css('top', 'calc(97% - 35px)');
+                
             }
         }
-        $('#label1').css('left', '110%');
+        $('#label1').css('left', 'calc(95% - 35px)');
         $('#label2').css('left', '83%');
         $('#label3').css('left', '68%');
         $('#label4').css('left', '52%');
         $('#label5').css('left', '37%');
         $('#label7').css('left', '6%');
+        $('#label8').css('left', '3%');
     }
 }
 
